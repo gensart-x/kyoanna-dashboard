@@ -1,0 +1,29 @@
+{
+  "name": "kyoanna-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for Kyoanna REST API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --ext \"ts,json\" --exec \"tsx ./src/app.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "kyoanna-dashboard"
+  },
+  "author": "gensart-x",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ejs": "^3.1.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "nodemon": "^3.1.2",
+    "tsc-alias": "^1.8.10",
+    "tsx": "^4.11.1",
+    "typescript": "^5.4.5"
+  }
+}
