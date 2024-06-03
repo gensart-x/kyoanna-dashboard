@@ -1,108 +1,62 @@
 <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
     <ul id="sidebarnav">
-        <li class="nav-small-cap">
-            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">Home</span>
-        </li>
         <li class="sidebar-item">
-            <a class="sidebar-link" href="./index.html" aria-expanded="false">
+            <a class="sidebar-link <%= (viewData.page == 'dashboard') ? 'active' : '' %>" href="/">
                 <span>
                     <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu">Dashboard</span>
+                <span class="hide-menu">Dasbor</span>
             </a>
         </li>
         <li class="nav-small-cap">
             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">UI COMPONENTS</span>
+            <span class="hide-menu">Daftar API</span>
         </li>
         <li class="sidebar-item">
-            <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+            <a class="sidebar-link <%= (viewData.page == 'cookpad') ? 'active' : '' %>" href="/cookpad">
                 <span>
-                    <i class="ti ti-article"></i>
+                    <i class="material-icons">layers</i>
                 </span>
-                <span class="hide-menu">Buttons</span>
+                <span class="hide-menu">Cookpad</span>
             </a>
         </li>
         <li class="sidebar-item">
-            <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+            <div class="sidebar-link">
                 <span>
-                    <i class="ti ti-alert-circle"></i>
+                    <i class="material-icons">layers</i>
                 </span>
-                <span class="hide-menu">Alerts</span>
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
-                <span>
-                    <i class="ti ti-cards"></i>
+                <span class="hide-menu">
+                    PP Couple <small class="badge rounded-pill text-bg-warning">Soon!</small>
                 </span>
-                <span class="hide-menu">Card</span>
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
-                <span>
-                    <i class="ti ti-file-description"></i>
-                </span>
-                <span class="hide-menu">Forms</span>
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
-                <span>
-                    <i class="ti ti-typography"></i>
-                </span>
-                <span class="hide-menu">Typography</span>
-            </a>
+                </d>
         </li>
         <li class="nav-small-cap">
             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">AUTH</span>
+            <span class="hide-menu">Manajemen API Key</span>
         </li>
         <li class="sidebar-item">
-            <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
+            <a class="sidebar-link" href="#">
                 <span>
-                    <i class="ti ti-login"></i>
+                    <i class="material-icons">vpn_key</i>
                 </span>
-                <span class="hide-menu">Login</span>
+                <span class="hide-menu">API Key</span>
             </a>
         </li>
         <li class="sidebar-item">
-            <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
+            <a class="sidebar-link" href="#">
                 <span>
-                    <i class="ti ti-user-plus"></i>
+                    <i class="material-icons">assessment</i>
                 </span>
-                <span class="hide-menu">Register</span>
-            </a>
-        </li>
-        <li class="nav-small-cap">
-            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">EXTRA</span>
-        </li>
-        <li class="sidebar-item">
-            <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                    <i class="ti ti-mood-happy"></i>
-                </span>
-                <span class="hide-menu">Icons</span>
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <span>
-                    <i class="ti ti-aperture"></i>
-                </span>
-                <span class="hide-menu">Sample Page</span>
+                <span class="hide-menu">Statistik</span>
             </a>
         </li>
     </ul>
     <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
         <div class="d-flex">
             <div class="unlimited-access-title me-3">
-                <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Upgrade to pro</h6>
-                <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" target="_blank"
-                    class="btn btn-primary fs-2 fw-semibold lh-sm">Buy Pro</a>
+                <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Gratis Selamanya!</h6>
+                <a href="https://trakteer.id/gensart" target="_blank"
+                    class="btn btn-primary fs-2 fw-semibold lh-sm">Traktir</a>
             </div>
             <div class="unlimited-access-img">
                 <img src="static/images/backgrounds/rocket.png" alt="" class="img-fluid">

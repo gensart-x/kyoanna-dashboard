@@ -1,8 +1,16 @@
 import express from "express";
 import * as mainController from '@controller/main.controller';
 
-const router = express.Router();
+const routes = express.Router();
 
-router.get('/', mainController.dashboard);
+routes.get('/', mainController.dashboard);
+routes.get('/cookpad', mainController.cookpad)
+routes.get('/pp-couple', _ => { })
+routes.get('/manajemen-api-key', _ => { })
+routes.get('/statistik-api-key', _ => { })
+routes.get('/profil-saya', _ => { })
+routes.get('/logout', _ => { })
+routes.get('/login', _ => { })
+routes.get('/daftar', _ => { })
 
-export default router
+export default routes
