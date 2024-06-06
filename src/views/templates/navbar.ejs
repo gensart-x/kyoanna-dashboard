@@ -6,7 +6,7 @@
                     <i class="ti ti-menu-2"></i>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-md-block d-none">
                 <h5>
                     <%= viewData.subTitle || '' %>
                 </h5>
@@ -15,14 +15,14 @@
         <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
                 <li class="nav-item">
-                    <button type="button" class="btn btn-sm btn-outline-primary d-flex align-items-center me-2">
+                    <a href="/daftar" class="btn btn-sm btn-outline-primary d-flex align-items-center me-2">
                         <i class="material-icons fs-4 me-1">group_add</i> Daftar
-                    </button>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-sm btn-outline-primary d-flex align-items-center">
+                    <a href="/login" class="btn btn-sm btn-outline-primary d-flex align-items-center">
                         <i class="material-icons fs-4 me-1">account_circle</i> Login
-                    </button>
+                    </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown">

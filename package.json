@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && tsc-alias",
+    "build": "tsc && tsc-alias && tscp",
     "dev": "nodemon --ext \"ts,json\" --exec \"tsx ./src/app.ts\""
   },
   "repository": {
@@ -26,6 +26,7 @@
     "nodemon": "^3.1.2",
     "tsc-alias": "^1.8.10",
     "tsx": "^4.11.1",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "typescript-cp": "^0.1.9"
   }
 }

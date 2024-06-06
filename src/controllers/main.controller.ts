@@ -10,7 +10,7 @@ const dashboard = async (req: Request, res: Response) => {
 }
 
 const cookpad = async (req: Request, res: Response) => {
-    renderView(res, 'index_cookpad', {
+    renderView(res, 'api/index_cookpad', {
         title: 'Cookpad',
         subTitle: 'Cookpad',
         page: 'cookpad',
