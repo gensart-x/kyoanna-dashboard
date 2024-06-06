@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Dashboard for Kyoanna REST API",
   "main": "app.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && tsc-alias",
     "dev": "nodemon --ext \"ts,json\" --exec \"tsx ./src/app.ts\""
   },
   "repository": {
