@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && tsc-alias && tscp",
-    "dev": "nodemon --ext \"ts,json\" --exec \"tsx ./src/app.ts\""
+    "dev": "nodemon --ext \"ts\" --exec \"tsx ./src/app.ts\""
   },
   "repository": {
     "type": "git",

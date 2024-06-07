@@ -1,46 +1,16 @@
 <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
     <ul id="sidebarnav">
         <li class="sidebar-item">
-            <a class="sidebar-link <%= (viewData.page == 'dashboard') ? 'active' : '' %>" href="/">
+            <a class="sidebar-link <%= (viewData.page == 'dashboard') ? '' : '' %>" href="/">
                 <span>
                     <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu">Dasbor</span>
+                <span class="hide-menu">Menu Utama</span>
             </a>
         </li>
-        <li class="nav-small-cap">
+        <li class="nav-small-cap d-none">
             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">Daftar API</span>
-        </li>
-        <li class="sidebar-item">
-            <a class="sidebar-link <%= (viewData.page == 'cookpad') ? 'active' : '' %>" href="/cookpad">
-                <span>
-                    <i class="material-icons">layers</i>
-                </span>
-                <span class="hide-menu">Cookpad</span>
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <div class="sidebar-link">
-                <span>
-                    <i class="material-icons">layers</i>
-                </span>
-                <span class="hide-menu">
-                    PP Couple <small class="badge rounded-pill text-bg-warning">Soon!</small>
-                </span>
-                </d>
-        </li>
-        <li class="nav-small-cap">
-            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">Manajemen API Key</span>
-        </li>
-        <li class="sidebar-item">
-            <a class="sidebar-link" href="#">
-                <span>
-                    <i class="material-icons">vpn_key</i>
-                </span>
-                <span class="hide-menu">API Key</span>
-            </a>
+            <span class="hide-menu">Statistik API</span>
         </li>
         <li class="sidebar-item">
             <a class="sidebar-link" href="#">
@@ -51,7 +21,7 @@
             </a>
         </li>
     </ul>
-    <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
+    <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 rounded mt-5">
         <div class="d-flex">
             <div class="unlimited-access-title me-3">
                 <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Gratis Selamanya!</h6>
