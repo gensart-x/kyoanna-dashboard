@@ -4,19 +4,19 @@ import { Request, Response } from 'express';
 const dashboard = async (req: Request, res: Response) => {
     renderView(res, 'index_dashboard', {
         title: 'Dasbor Utama',
-        subTitle: 'Dasbor',
+        subTitle: 'Overview',
         page: 'dashboard'
     })
 }
 
-const cookpad = async (req: Request, res: Response) => {
-    renderView(res, 'api/index_cookpad', {
-        title: 'Cookpad',
-        subTitle: 'Cookpad',
-        page: 'cookpad',
+const statistic = async (req: Request, res: Response) => {
+    renderView(res, 'index_statistic', {
+        title: 'Statistik API',
+        subTitle: 'API Statistic',
+        page: 'statistic',
     })
 }
 
 export {
-    dashboard, cookpad
+    dashboard, statistic
 }

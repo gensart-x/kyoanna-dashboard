@@ -5,26 +5,29 @@
                 <span>
                     <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu">Menu Utama</span>
+                <span class="hide-menu">Overview</span>
             </a>
         </li>
         <li class="nav-small-cap d-none">
             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">Statistik API</span>
+            <span class="hide-menu">API Statistics</span>
         </li>
         <li class="sidebar-item">
-            <a class="sidebar-link" href="#">
+            <a class="sidebar-link <%= (viewData.page == 'statistic') ? '' : '' %>" href="/statistik-api">
                 <span>
                     <i class="material-icons">assessment</i>
                 </span>
-                <span class="hide-menu">Statistik</span>
+                <span class="hide-menu">API Statistics</span>
             </a>
         </li>
     </ul>
     <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 rounded mt-5">
         <div class="d-flex">
             <div class="unlimited-access-title me-3">
-                <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Gratis Selamanya!</h6>
+                <div class="mb-6">
+                    <h6 class="fw-semibold fs-4 text-dark w-85">Gratis Selamanya!</h6>
+                    <small><em class="text-muted">Free Forever!</em></small>
+                </div>
                 <a href="https://trakteer.id/gensart" target="_blank"
                     class="btn btn-primary fs-2 fw-semibold lh-sm">Traktir</a>
             </div>
