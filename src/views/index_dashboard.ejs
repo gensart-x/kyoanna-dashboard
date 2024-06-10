@@ -38,21 +38,35 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="align-middle">
-                            <td scope="row">1</td>
-                            <td class="text-nowrap">Cookpad API</td>
-                            <td class="text-center">
-                                <a href="#" target="_blank" class="btn btn-sm btn-primary">Coba/Test</a>
-                            </td>
-                            <td>
-                                <span class="badge rounded-pill text-bg-success">Online</span>
-                                <span class="badge rounded-pill text-bg-danger">Offline</span>
-                            </td>
-                            <td>
-                                Informasi tentang text yang panjang sekali untuk
-                                digunakan sebagai mana mestinya untuk digunakan
-                            </td>
-                        </tr>
+                        <% viewData.apiList.forEach(api=> { %>
+                            <tr class="align-middle">
+                                <td scope="row">1</td>
+                                <td class="text-nowrap">
+                                    <%= api.name %>
+                                </td>
+                                <td class="text-center">
+                                    <a href="<%= api.exampleLink %>" target="_blank"
+                                        class="btn btn-sm btn-primary">Coba/Test</a>
+                                </td>
+                                <td>
+                                    <% if (api.isOnline) { %>
+                                        <span class="badge rounded-pill text-bg-success">Online</span>
+                                        <% } else { %>
+                                            <span class="badge rounded-pill text-bg-danger">Offline</span>
+                                            <% } %>
+                                </td>
+                                <td>
+                                    <%= api.description %>
+                                </td>
+                            </tr>
+                            <% }) %>
+                                <% if (viewData.apiList.length <=0) { %>
+                                    <tr class="align-middle">
+                                        <td colspan="5" class="text-center">
+                                            <em>- Tidak ada API aktif saat ini -</em>
+                                        </td>
+                                    </tr>
+                                    <% } %>
                     </tbody>
                 </table>
             </div>
