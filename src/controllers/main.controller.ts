@@ -2,7 +2,7 @@ import renderView from '@/utilities/views';
 import { Request, Response } from 'express';
 import axios from 'axios';
 
-const KYOANNA_API_LIST_URL = 'https://api.kyoanna.insomnia247.nl/api-list';
+const KYOANNA_API_LIST_URL = 'http://api.kyoanna.insomnia247.nl/api-list';
 
 const dashboard = async (req: Request, res: Response) => {
 
