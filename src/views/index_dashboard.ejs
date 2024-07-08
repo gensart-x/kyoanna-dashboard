@@ -27,48 +27,50 @@
         <h4 class="mt-md-5 text-center">- Daftar API -</h4>
         <div class="card">
             <div class="card-body">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">Nama API</th>
-                            <th scope="col">Aksi</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Deskripsi API</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <% viewData.apiList.forEach(api=> { %>
-                            <tr class="align-middle">
-                                <td scope="row">1</td>
-                                <td class="text-nowrap">
-                                    <%= api.name %>
-                                </td>
-                                <td class="text-center">
-                                    <a href="<%= api.exampleLink %>" target="_blank"
-                                        class="btn btn-sm btn-primary">Coba/Test</a>
-                                </td>
-                                <td>
-                                    <% if (api.isOnline) { %>
-                                        <span class="badge rounded-pill text-bg-success">Online</span>
-                                        <% } else { %>
-                                            <span class="badge rounded-pill text-bg-danger">Offline</span>
-                                            <% } %>
-                                </td>
-                                <td>
-                                    <%= api.description %>
-                                </td>
+                <div class="table-responsive">
+                    <table class="table table-hover" id="api-list-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama API</th>
+                                <th scope="col">Aksi</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Deskripsi API</th>
                             </tr>
-                            <% }) %>
-                                <% if (viewData.apiList.length <=0) { %>
-                                    <tr class="align-middle">
-                                        <td colspan="5" class="text-center">
-                                            <em>- Tidak ada API aktif saat ini -</em>
-                                        </td>
-                                    </tr>
-                                    <% } %>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <% viewData.apiList.forEach(api=> { %>
+                                <tr class="align-middle">
+                                    <td scope="row">1</td>
+                                    <td class="text-nowrap">
+                                        <%= api.name %>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="<%= api.exampleLink %>" target="_blank"
+                                            class="btn btn-sm btn-primary">Coba/Test</a>
+                                    </td>
+                                    <td>
+                                        <% if (api.isOnline) { %>
+                                            <span class="badge rounded-pill text-bg-success">Online</span>
+                                            <% } else { %>
+                                                <span class="badge rounded-pill text-bg-danger">Offline</span>
+                                                <% } %>
+                                    </td>
+                                    <td>
+                                        <%= api.description %>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                                    <% if (viewData.apiList.length <=0) { %>
+                                        <tr class="align-middle">
+                                            <td colspan="5" class="text-center">
+                                                <em>- Tidak ada API aktif saat ini -</em>
+                                            </td>
+                                        </tr>
+                                        <% } %>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -86,3 +88,10 @@
         </small>
     </div>
 </div>
+<script>
+    $(function () {
+        const table = new DataTable('#api-list-table', {
+            responsive: true
+        })
+    });
+</script>
