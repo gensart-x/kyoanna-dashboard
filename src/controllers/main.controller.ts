@@ -31,10 +31,31 @@ const dashboard = async (req: Request, res: Response) => {
 }
 
 const statistic = async (req: Request, res: Response) => {
+
+    type APIStatistics = {
+        totalHit: number,
+    };
+
+    let statistics: APIStatistics;
+    let totalApi: number = 0;
+    try {
+        const response = await axios.get(KYOANNA_API_LIST_URL);
+        statistics = response.data.statistics ?? {
+            totalHit: 0
+        };
+        totalApi = response.data.data?.length ?? 0;
+    } catch (error) {
+        statistics = {
+            totalHit: 0
+        };
+    }
+
     renderView(res, 'index_statistic', {
         title: 'Statistik API',
         subTitle: 'API Statistic',
         page: 'statistic',
+        statistics,
+        totalApi
     })
 }
 
