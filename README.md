@@ -10,8 +10,7 @@ The name Kyoanna is inspired by [BokuYaba](https://en.wikipedia.org/wiki/The_Dan
 
 ![forthebadge](https://img.shields.io/github/last-commit/gensart-x/kyoanna-dashboard/main?display_timestamp=author&style=for-the-badge&logo=github&link=https%3A%2F%2Fgithub.com%2Fgensart-x%2Fkyoanna-dashboard)
 
-> 🚧 Under Development  
-> 🔴 Status : Cannot be used, under development
+> 🟢 Status : **Online**, several APIs available
 
 ---
 
